@@ -39,6 +39,8 @@ Pod::Spec.new do |s|
     'ENABLE_BITCODE' => 'NO',
     'OTHER_LDFLAGS' => '$(inherited) -Xlinker -no_application_extension',
   }
+
+  s.static_framework = true
   
   s.cocoapods_version = '>= 1.4.0'
   if s.respond_to?(:swift_versions) then
